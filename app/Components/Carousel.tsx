@@ -8,7 +8,7 @@ const Carousel: React.FC = () => {
   const slides = [
     {
       id: 1,
-      image: "/slide10.jpg", // Replace with your image path
+      image: "/slide13.jpg", // Replace with your image path
       title: "Brownstone Construction",
       description:
         "Transforming properties into stunning, functional, and modern designs.",
