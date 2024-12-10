@@ -8,7 +8,7 @@ const Carousel: React.FC = () => {
   const slides = [
     {
       id: 1,
-      image: "/slide1.avif", // Replace with your image path
+      image: "/slide10.jpg", // Replace with your image path
       title: "Brownstone Construction",
       description:
         "Transforming properties into stunning, functional, and modern designs.",
@@ -26,7 +26,7 @@ const Carousel: React.FC = () => {
       title: "Restoring Timeless Elegance",
       description:
         "Breathe new life into historic landmarks with expert building restoration services.",
-      
+
     },
   ];
 
@@ -47,15 +47,14 @@ const Carousel: React.FC = () => {
   return (
     <div className="relative w-full h-[70vh] overflow-hidden bg-gray-200">
       {/* Vertical Red Background */}
-      <div className="absolute top-0 left-0 w-20 h-full bg-[#FF7C39] z-10 hidden md:block"></div>
+      <div className="absolute top-0 left-0 w-20 h-full bg-[#fd7d3b] z-10 hidden md:block"></div>
 
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 flex transition-transform duration-700 ${
-            index === currentSlide ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`absolute inset-0 flex transition-transform duration-700 ${index === currentSlide ? "translate-x-0" : "translate-x-full"
+            }`}
         >
           {/* Image Div */}
           <div className="flex-1 relative z-20">
@@ -67,15 +66,15 @@ const Carousel: React.FC = () => {
             />
           </div>
           {/* Content Div */}
-          <div className="flex-1 flex items-center justify-center bg-gray-200 p-8">
+          <div className="flex-1 flex items-center justify-center bg-black p-8">
             <div className="text-center max-w-lg">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              <h2 className="text-2xl sm:text-4xl font-bold text-white mb-4">
                 {slide.title}
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg sm:text-base text-white mb-6">
                 {slide.description}
               </p>
-              <button className="px-6 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-[orange] transition-colors">
+              <button className="px-6 py-3 bg-[#fd7d3b] text-white font-semibold rounded-full hover:bg-[orange] transition-colors">
                 Learn More
               </button>
             </div>
@@ -86,14 +85,14 @@ const Carousel: React.FC = () => {
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-transparent text-black rounded-full p-2 z-30"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-transparent text-white rounded-full p-2 z-30"
         aria-label="Previous Slide"
       >
         <ChevronLeft className="h-6 w-6 md:h-8 md:w-8" />
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-transparent text-black rounded-full p-2 z-30"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-transparent text-white rounded-full p-2 z-30"
         aria-label="Next Slide"
       >
         <ChevronRight className="h-6 w-6 md:h-8 md:w-8" />

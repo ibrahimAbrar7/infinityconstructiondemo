@@ -9,6 +9,7 @@ import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import Services from "./Components/Services";
 import Contact from "./Components/Contact";
+import BackToTop from "./Components/BackToTop";
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,7 @@ const Home = () => {
       <Projects />
       <Contact />
       <Footer />
-      
+      <BackToTop />
      </>
   );
 };

@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <header className="bg-[black] border-b border-gray-200 w-full z-50 font-sans">
+    <header className="bg-[black] border-gray-200 w-full z-50 font-sans">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Parent Div */}
         <div className="w-full flex justify-center md:justify-between items-center text-white">

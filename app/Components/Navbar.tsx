@@ -30,13 +30,13 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             <Image
               src="/infinity-logo.png"
               alt="Company Logo"
-              width={50} // Adjust size as needed
-              height={50}
+              width={70} // Adjust size as needed
+              height={70}
               className="h-12"
             />
             <div className="flex flex-col text-center">
               <span className="text-lg font-bold text-[black]">
-                Infinity Construction NYC
+                INFINITY CONSTRUCTION NYC
               </span>
               <span className="text-sm text-[black]">
                 Quality is our specialty
@@ -47,22 +47,22 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8 text-sm text-black font-medium tracking-wide">
-          <Link href="/" className="text-orange-600 hover:text-orange-600 transition-colors duration-200">
+          <Link href="/" className="text-orange-600 hover:text-orange-600 transition-colors duration-200 font-bold">
             HOME
           </Link>
-          <Link href="/services" className="hover:text-orange-600 transition-colors duration-200">
+          <Link href="/" className="hover:text-orange-600 transition-colors duration-200 font-bold">
             SERVICES
           </Link>
-          <Link href="/projects" className="hover:text-orange-600 transition-colors duration-200">
+          <Link href="/" className="hover:text-orange-600 transition-colors duration-200 font-bold">
             PROJECTS
           </Link>
-          <Link href="/blog" className="hover:text-orange-600 transition-colors duration-200">
+          <Link href="/" className="hover:text-orange-600 transition-colors duration-200 font-bold">
             BLOG
           </Link>
-          <Link href="/gallery" className="hover:text-orange-600 transition-colors duration-200">
+          <Link href="/" className="hover:text-orange-600 transition-colors duration-200 font-bold">
             GALLERY
           </Link>
-          <Link href="/more" className="hover:text-orange-600 transition-colors duration-200">
+          <Link href="/" className="hover:text-orange-600 transition-colors duration-200 font-bold">
             MORE
           </Link>
         </div>
