@@ -35,13 +35,13 @@ const Projects = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="container mx-auto px-4 sm:px-8 lg:px-16 py-10 bg-gray-50 overflow-hidden">
+    <div className="container mx-auto px-4 sm:px-8 lg:px-16 py-10 bg-gray-50">
       <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
         Our Projects
       </h1>
 
       {/* Carousel */}
-      <div className="relative w-full h-auto mx-auto px-2">
+      <div className="relative w-full h-auto mx-auto px-2 overflow-hidden">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {slides.map((slide) => (
