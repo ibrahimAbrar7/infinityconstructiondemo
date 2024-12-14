@@ -35,7 +35,7 @@ const Projects = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="container mx-auto px-4 sm:px-8 lg:px-16 py-10 bg-gray-50">
+    <div className="container mx-auto px-4 sm:px-8 lg:px-16 py-10 bg-gray-50 overflow-hidden">
       <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
         Our Projects
       </h1>
