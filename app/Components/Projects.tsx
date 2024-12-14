@@ -41,7 +41,7 @@ const Projects = () => {
       </h1>
 
       {/* Carousel */}
-      <div className="relative w-full h-auto mx-auto">
+      <div className="relative w-full h-auto mx-auto overflow-hidden">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {slides.map((slide) => (
